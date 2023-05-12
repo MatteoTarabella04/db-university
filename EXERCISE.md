@@ -81,3 +81,8 @@ mysql> SELECT *
     -> FROM `degrees`
     -> WHERE `level` = 'magistrale';
 
+7. Da quanti dipartimenti è composta l'università? (12) : 
+mysql> SELECT COUNT(ID)       
+    -> AS Numero_Dipartimenti  
+    -> FROM `departments`;
+
