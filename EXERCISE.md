@@ -86,3 +86,13 @@ mysql> SELECT COUNT(ID)
     -> AS Numero_Dipartimenti  
     -> FROM `departments`;
 
+8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50) : 
+mysql> SELECT COUNT(*)
+    -> AS Isegnatnti_Senza_Numero
+    -> FROM `teachers` 
+    -> WHERE `phone` IS NULL;
++-------------------------+
+| Isegnatnti_Senza_Numero |
++-------------------------+
+|                      50 |
++-------------------------+
